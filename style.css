@@ -7,3 +7,30 @@
  Version:      0.0.0.1
  Text Domain:  retrygames
 */
+
+
+/*HEADER SECTION*/
+img.logo.md {
+	position: absolute;
+	top: 5px;
+}
+
+.bg-purpl {
+	background-color: #650B7F !important;
+}
+
+.btn-outline-secondary,
+.navbar-light .navbar-nav .nav-link {
+	color: rgb(255 255 255);
+}
+
+.btn-outline-secondary{
+	border-color: rgb(255 255 255);
+}
+
+.navbar {
+	padding: 0;
+	margin: 0;
+	height: 79px;
+	border-bottom: 4px solid white;
+}

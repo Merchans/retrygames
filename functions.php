@@ -8,3 +8,6 @@
 
     // WooCommerce
     require get_template_directory() . '/woocommerce/woocommerce-functions.php';
+
+
+add_theme_support( 'custom-background' );

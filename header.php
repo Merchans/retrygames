@@ -8,7 +8,7 @@
 	 *
 	 * @package Bootscore
 	 */
-	
+
 	?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -38,7 +38,7 @@
 
         <header id="masthead" class="site-header">
 
-            <nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-purpl fixed-top">
 
                 <div class="backdrop-overlay"></div>
 
@@ -49,12 +49,12 @@
                     </button>
 
                     <!-- Top Nav Search Mobile -->
-                    <div class="top-nav-search-md d-lg-none ms-2">
+                    <div class="top-nav-search-md d-lg-none ms-2 ">
                         <div class="dropdown">
                             <button class="btn btn-outline-secondary" type="button" id="dropdown-search" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-search"></i>
                             </button>
-                            <div class="dropdown-search dropdown-menu position-fixed border-0 bg-light rounded-0 start-0 end-0" aria-labelledby="dropdown-search">
+                            <div class="dropdown-search dropdown-menu position-fixed border-0 bg-purpl rounded-0 start-0 end-0" aria-labelledby="dropdown-search">
                                 <div class="container">
                                     <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
                                     <div class="mb-2">
@@ -66,8 +66,8 @@
                         </div>
                     </div>
 
-                    <a class="navbar-brand d-md-none" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/logo/logo-sm.svg" alt="logo" class="logo sm"></a>
-                    <a class="navbar-brand d-none d-md-block" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo md"></a>
+                    <a class="navbar-brand d-md-none" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/logo/retrygames_logo.png" alt="logo" class="logo sm"></a>
+                    <a class="navbar-brand d-none d-md-block" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/logo/retrygames_logo.png" alt="logo" class="logo md"></a>
 
                     <!-- Top Nav Widget -->
                     <div class="top-nav order-lg-1 flex-grow-1 flex-lg-grow-0 d-flex justify-content-start">
@@ -80,7 +80,7 @@
 
 
                     <div class="offcanvas expand-lg offcanvas-left flex-fill" data-body="backdrop" tabindex="-1" id="offcanvas-menu-left">
-                        <a href="javascript:void(0)" class="offcanvas-header expand-lg bg-light underline-0" data-toggle="offcanvas">
+                        <a href="javascript:void(0)" class="offcanvas-header expand-lg bg-purpl underline-0" data-toggle="offcanvas">
                             <?php esc_html_e('Close menu' , 'bootscore'); ?> <i class="fas fa-chevron-right"></i>
                         </a>
                         <div class="offcanvas-body expand-lg">
@@ -93,7 +93,7 @@
                                     'container'         => 'div',
                                     'container_class'   => 'bs-nav',
                                     'container_id'      => 'bootscore-navbar',
-                                    'menu_class'        => 'nav navbar-nav justify-content-end',
+                                    'menu_class'        => 'nav navbar-nav justify-content-center',
                                     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                                     'walker'            => new WP_Bootstrap_Navwalker(),
                                 ) );
