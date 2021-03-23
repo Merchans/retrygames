@@ -8,11 +8,22 @@
  Text Domain:  retrygames
 */
 
+/*REGULAR html SECTION*/
+a {
+	color: #650c7e;
+
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #f4a13a;
+}
+
+
 
 /*HEADER SECTION*/
-img.logo.md {
-	position: absolute;
-	top: 5px;
+.logo.md {
+	/*top: 5px;*/
 }
 
 .bg-purpl {
@@ -24,7 +35,7 @@ img.logo.md {
 	color: rgb(255 255 255);
 }
 
-.btn-outline-secondary{
+.btn-outline-secondary {
 	border-color: rgb(255 255 255);
 }
 
@@ -33,4 +44,32 @@ img.logo.md {
 	margin: 0;
 	height: 79px;
 	border-bottom: 4px solid white;
+}
+
+/*BTN SECTION*/
+.btn-primary {
+	color: #fff;
+	background-color: #650c7e;
+	border-color: #3a0748;
+}
+
+.btn-primary:hover {
+	background-color: #f4a13a;
+	border-color: #f7bf33;
+}
+
+
+.tag-cloud-link {
+	display: inline-block;
+	padding: .35em .65em;
+	font-size: .75em;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25rem;
+	background-color: #650B7F !important;
+	text-decoration: none;
 }
