@@ -57,9 +57,19 @@ a:hover {
 	background-color: #f4a13a;
 	border-color: #f7bf33;
 }
+.btn-outline-primary {
+	color: #650c7e;
+	border-color: #650c7e;
+}
 
+.btn-outline-primary:hover {
+	color: #fff;
+	background-color: #650c7e;
+	border-color: #3a0748;
+}
 
-.tag-cloud-link {
+mark {
+	background-color: #f4a13a;
 	display: inline-block;
 	padding: .35em .65em;
 	font-size: .75em;
@@ -70,6 +80,50 @@ a:hover {
 	white-space: nowrap;
 	vertical-align: baseline;
 	border-radius: .25rem;
+}
+.bg-danger {
+	background-color: #f4a13a!important;
+}
+
+.bg-secondary {
+	background-color: #f4a13a!important;
+}
+
+.tag-cloud-link {
+	display: inline-block;
+	padding: .35em .65em;
+	font-size: .75em;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	margin: 1px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25rem;
 	background-color: #650B7F !important;
 	text-decoration: none;
+}
+
+
+.entry-content{
+	line-height: 1.4;
+	font-size: 20px;
+	margin: 0 auto;
+	max-width: 585px;
+}
+
+.term-description,
+.page-title,
+.woocommerce-result-count {
+	color: white;
+}
+
+.product-box {
+	background: #f8f9fa!important;
+	display: block;
+	border-radius: .25rem;
+}
+.border-top {
+	border-top: 4px solid white!important;
 }
