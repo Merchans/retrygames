@@ -25,7 +25,23 @@ a:hover {
 .logo.md {
 	/*top: 5px;*/
 }
+.woocommerce-loop-category__title {
+	padding: .5em 0;
+	margin: 0;
+	font-size: 1em;
+	background: #f8f9fa;
+	border-radius: 0 0 .25rem 0.25rem;
+	text-align: center;
+}
 
+.woocommerce ul.products li.product a img {
+	margin: 0;
+	border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+	background-color: #650c7e;
+}
 .bg-purpl {
 	background-color: #650B7F !important;
 }
@@ -68,18 +84,20 @@ a:hover {
 	border-color: #3a0748;
 }
 
-mark {
+mark.count {
 	background-color: #f4a13a;
 	display: inline-block;
-	padding: .35em .65em;
-	font-size: .75em;
+	font-size: 1em;
 	font-weight: 700;
 	line-height: 1;
 	color: #fff;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
+	position: absolute;
 	border-radius: .25rem;
+	top: 0px;
+	right: 0px;
 }
 .bg-danger {
 	background-color: #f4a13a!important;

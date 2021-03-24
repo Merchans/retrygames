@@ -15,14 +15,14 @@
 
 			<!-- Hook to add something nice -->
 			<?php bs_after_primary(); ?>
-
+			<?php woocommerce_breadcrumb(); ?>
 			<div class="row">
 				<div class="col">
 
 					<main id="main" class="site-main">
 
 						<!-- Title & Description -->
-						<header class="page-header mb-4 mt-4 p-4 card">
+						<header class="page-header mb-4  p-4 card">
 							<h1><?php single_cat_title(); ?></h1>
 							<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
 						</header>
