@@ -25,10 +25,10 @@
 					<?php
 
 						// Getting data from Customizer to display the Popular Products section
-						$popular_limit  = get_theme_mod( 'set_popular_max_num', 2 );
-						$popular_col    = get_theme_mod( 'set_popular_max_col', 2 );
-						$arrivals_limit = get_theme_mod( 'set_new_arrivals_max_num', 2 );
-						$arrivals_col   = get_theme_mod( 'set_new_arrivals_max_col', 2 );
+						$popular_limit  = get_theme_mod( 'set_popular_max_num', 3 );
+						$popular_col    = get_theme_mod( 'set_popular_max_col', 3 );
+						$arrivals_limit = get_theme_mod( 'set_new_arrivals_max_num', 3 );
+						$arrivals_col   = get_theme_mod( 'set_new_arrivals_max_col', 3 );
 
 					?>
 					<div class="container">
@@ -64,7 +64,7 @@
 					?>
 					<section class="deal-of-the-week woocommerce ">
 						<div class="container">
-								<div class="card p-4 mt-4 mb-4 col-6 m-auto ml-5">
+								<div class="card p-4 mt-4 mb-4 col-md-6 m-auto ml-5">
 									<div class="section-title">
 										<h2><?php echo esc_html( get_theme_mod( 'set_deal_title', __( 'Deal of the Week', 'retrygames' ) ) ); ?></h2>
 									</div>

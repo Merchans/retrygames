@@ -19,7 +19,7 @@
 		exit;
 	}
 ?>
-<?php if ( is_archive() and is_post_type_archive() ) : ?>
+<?php if ( is_archive() and is_post_type_archive() or is_front_page()) : ?>
 	</ul><!-- row in loop-start.php -->
 <?php else : ?>
 	</div><!-- row in loop-start.php -->

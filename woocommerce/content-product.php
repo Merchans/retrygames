@@ -24,51 +24,103 @@
 		return;
 	}
 ?>
-
-<div class="col-12 col-md-6 col-lg-4  mb-4">
-	<div <?php wc_product_class( 'card h-100 d-flex text-center', $product ); ?>>
-		<?php
-			/**
-			 * Hook: woocommerce_before_shop_loop_item.
-			 *
-			 * @hooked woocommerce_template_loop_product_link_open - 10
-			 */
-			do_action( 'woocommerce_before_shop_loop_item' );
-
-			/**
-			 * Hook: woocommerce_before_shop_loop_item_title.
-			 *
-			 * @hooked woocommerce_show_product_loop_sale_flash - 10
-			 * @hooked woocommerce_template_loop_product_thumbnail - 10
-			 */
-			do_action( 'woocommerce_before_shop_loop_item_title' );
-
-		?>
-		<div class="card-body d-flex flex-column">
+<?php if ( is_front_page() ) : ?>
+	<li <?php wc_product_class( 'card', $product ); ?>>
+		<div >
 			<?php
 				/**
-				 * Hook: woocommerce_shop_loop_item_title.
+				 * Hook: woocommerce_before_shop_loop_item.
 				 *
-				 * @hooked woocommerce_template_loop_product_title - 10
+				 * @hooked woocommerce_template_loop_product_link_open - 10
 				 */
-				do_action( 'woocommerce_shop_loop_item_title' );
+				do_action( 'woocommerce_before_shop_loop_item' );
 
 				/**
-				 * Hook: woocommerce_after_shop_loop_item_title.
+				 * Hook: woocommerce_before_shop_loop_item_title.
 				 *
-				 * @hooked woocommerce_template_loop_rating - 5
-				 * @hooked woocommerce_template_loop_price - 10
+				 * @hooked woocommerce_show_product_loop_sale_flash - 10
+				 * @hooked woocommerce_template_loop_product_thumbnail - 10
 				 */
-				do_action( 'woocommerce_after_shop_loop_item_title' );
+				do_action( 'woocommerce_before_shop_loop_item_title' );
 
-				/**
-				 * Hook: woocommerce_after_shop_loop_item.
-				 *
-				 * @hooked woocommerce_template_loop_product_link_close - 5
-				 * @hooked woocommerce_template_loop_add_to_cart - 10
-				 */
-				do_action( 'woocommerce_after_shop_loop_item' );
 			?>
+			<div class="card-body d-flex flex-column">
+				<?php
+					/**
+					 * Hook: woocommerce_shop_loop_item_title.
+					 *
+					 * @hooked woocommerce_template_loop_product_title - 10
+					 */
+					do_action( 'woocommerce_shop_loop_item_title' );
+
+					/**
+					 * Hook: woocommerce_after_shop_loop_item_title.
+					 *
+					 * @hooked woocommerce_template_loop_rating - 5
+					 * @hooked woocommerce_template_loop_price - 10
+					 */
+					do_action( 'woocommerce_after_shop_loop_item_title' );
+
+					/**
+					 * Hook: woocommerce_after_shop_loop_item.
+					 *
+					 * @hooked woocommerce_template_loop_product_link_close - 5
+					 * @hooked woocommerce_template_loop_add_to_cart - 10
+					 */
+					do_action( 'woocommerce_after_shop_loop_item' );
+				?>
+			</div>
+		</div>
+	</li>
+<?php else : ?>
+	<div class="col-12 col-md-6 col-lg-4  mb-4">
+		<div <?php wc_product_class( 'card h-100 d-flex text-center', $product ); ?>>
+			<?php
+				/**
+				 * Hook: woocommerce_before_shop_loop_item.
+				 *
+				 * @hooked woocommerce_template_loop_product_link_open - 10
+				 */
+				do_action( 'woocommerce_before_shop_loop_item' );
+
+				/**
+				 * Hook: woocommerce_before_shop_loop_item_title.
+				 *
+				 * @hooked woocommerce_show_product_loop_sale_flash - 10
+				 * @hooked woocommerce_template_loop_product_thumbnail - 10
+				 */
+				do_action( 'woocommerce_before_shop_loop_item_title' );
+
+			?>
+			<div class="card-body d-flex flex-column">
+				<?php
+					/**
+					 * Hook: woocommerce_shop_loop_item_title.
+					 *
+					 * @hooked woocommerce_template_loop_product_title - 10
+					 */
+					do_action( 'woocommerce_shop_loop_item_title' );
+
+					/**
+					 * Hook: woocommerce_after_shop_loop_item_title.
+					 *
+					 * @hooked woocommerce_template_loop_rating - 5
+					 * @hooked woocommerce_template_loop_price - 10
+					 */
+					do_action( 'woocommerce_after_shop_loop_item_title' );
+
+					/**
+					 * Hook: woocommerce_after_shop_loop_item.
+					 *
+					 * @hooked woocommerce_template_loop_product_link_close - 5
+					 * @hooked woocommerce_template_loop_add_to_cart - 10
+					 */
+					do_action( 'woocommerce_after_shop_loop_item' );
+				?>
+			</div>
 		</div>
 	</div>
-</div>
+<?php endif ?>
+
+
+

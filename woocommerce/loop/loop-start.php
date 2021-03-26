@@ -19,7 +19,7 @@
 		exit;
 	}
 ?>
-<?php if ( is_archive() and is_post_type_archive() ) : ?>
+<?php if ( is_archive() and is_post_type_archive() or is_front_page()) : ?>
 <ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>"> <!-- End in loop-end.php -->
 	<?php else : ?>
 	<div class="row"><!-- End in loop-end.php -->
