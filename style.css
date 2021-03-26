@@ -152,10 +152,20 @@ mark.count {
     HTML VIDEO AS BACKGROUND:
     I updated code from Dudley Storey
 */
+
+
+section.slider > .flexslider {
+	border: none;
+	margin: 0;
+	margin-top: 55px;
+}
+
+.video-row {
+	height: 750px;
+}
 .video-row {
 	position: relative;
 	display: block;
-	height: 100vh;
 }
 .video-background {
 	background: #000;
@@ -191,4 +201,50 @@ mark.count {
 }
 @media all and (max-width: 500px) {
 	.vid-info .acronym { display: none; }
+}
+
+
+
+.slider-details-container {
+	color: #FFF;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	width: 800px;
+}
+.slider-details-container .slider-title {
+	color: #FFF;
+	font-weight: 700;
+}
+.slider-details-container h1 {
+	font-size: 3.7rem;
+}
+.slider-details-container .subtitle {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+}
+.slider-details-container a {
+	background-color: #650B7F;
+	color: #fff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	padding: 0.8em;
+	display: inline-block;
+	font-size: 1.2em;
+}
+section.lab-blog{
+	background: white;
+}
+section.popular-products {
+	background: #f7f7f7;
+}
+section.new-arrivals {
+	background: white;
+}
+.deal-of-the-week {
+	background: #f7f7f7;
+	padding: 60px 0;
+}
+section.popular-products.pt-4 .woocommerce ul.products {
+	margin: 0;
 }
